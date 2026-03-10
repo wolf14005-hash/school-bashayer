@@ -36,3 +36,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+/* ===== Password Protection For Initiatives Button ===== */
+
+document.getElementById("main-cta").addEventListener("click", function(e){
+
+  e.preventDefault();
+
+  const password = prompt("ادخل كلمة المرور لعرض المبادرات");
+
+  if(password === "1234"){
+
+    window.open("https://drive.google.com/drive/folders/184OtMMIDcvGMd93jC7ypacA12yi9z6ng?usp=sharing","_blank");
+
+  } else {
+
+    alert("كلمة المرور غير صحيحة");
+
+  }
+
+});
