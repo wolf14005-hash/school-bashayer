@@ -20,8 +20,6 @@
 <div class="logo-bar">
   <div class="logo-container">
 
-
-    <!-- الشعارات -->
     <div class="logos-center">
       <img src="image/logo_school.png" class="logo">
       <img src="image/logo_ar_new.png" class="logo small">
@@ -32,6 +30,7 @@
 </div>
 
 <!-- ================= HEADER ================= -->
+
 <header>
   <div class="container nav">
     <h1 id="school-name-display">
@@ -46,8 +45,10 @@
 </header>
 
 <!-- ================= HERO ================= -->
+
 <section id="home" class="hero">
   <div class="hero-content">
+
     <h1 id="hero-title" class="hero-title">
       منصة مبادرات مدرسة بشائر الخير للتعليم الأساسي (1-4)
     </h1>
@@ -56,13 +57,15 @@
       نؤمن بأن المبادرات تصنع الفرق
     </p>
 
-    <a id="main-cta" href="#" class="cta-btn">
-      <span id="button-text-display">عرض المبادرات</span>
-    </a>
+<a id="main-cta" class="cta-btn" href="javascript:void(0)">
+<span id="button-text-display">عرض المبادرات</span>
+</a>
+
   </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
+
 <section id="about" class="about-section">
   <div class="container">
 
@@ -73,32 +76,11 @@
       وتعزيز ثقافة التميز والإبداع داخل البيئة التعليمية.
     </p>
 
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">📚</div>
-        <h3>توثيق المبادرات</h3>
-        <p>عرض المبادرات التعليمية بأسلوب احترافي يعكس جودة العمل التربوي.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🚀</div>
-        <h3>تعزيز الابتكار</h3>
-        <p>دعم المعلمات  نحو الإبداع والتميز في تنفيذ المبادرات.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🤝</div>
-        <h3>الشراكة المجتمعية</h3>
-        <p>بناء علاقات تعاون مستدامة مع مؤسسات المجتمع المحلي.</p>
-      </div>
-
-    </div>
-
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
+
 <section id="contact" class="contact-section">
   <div class="container">
 
@@ -122,12 +104,37 @@
 </section>
 
 <!-- ================= FOOTER ================= -->
+
 <footer>
-  <p>مدرسة بشائر الخير للتعليم الأساسي (1-4) - جميع الحقوق محفوظة  © 2026 </p>
-  <p class="footer-note">
-    تصميم وفكرة: الأستاذة فاطمة البلوشية – معلمة تقنية المعلومات
-  </p>
+<p>مدرسة بشائر الخير للتعليم الأساسي (1-4) - جميع الحقوق محفوظة © 2026</p>
+<p class="footer-note">
+تصميم وفكرة: الأستاذة فاطمة البلوشية – معلمة تقنية المعلومات
+</p>
 </footer>
+
+<!-- PASSWORD MODAL -->
+
+<div id="password-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:9999">
+
+<div style="background:white;padding:30px;border-radius:12px;text-align:center;width:300px">
+
+<h3>ادخل كلمة المرور</h3>
+
+<input type="password" id="password-input" placeholder="كلمة المرور"
+style="width:100%;padding:10px;margin-top:15px;border:1px solid #ccc;border-radius:6px">
+
+<button onclick="checkPassword()"
+style="margin-top:15px;width:100%;padding:10px;background:#C46A84;color:white;border:none;border-radius:6px">
+
+دخول
+
+</button>
+
+<p id="password-error" style="color:red;margin-top:10px"></p>
+
+</div>
+
+</div>
 
 <script src="js/ss.js"></script>
 
